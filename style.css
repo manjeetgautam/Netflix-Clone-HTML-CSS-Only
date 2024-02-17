@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:ital,wght@300&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: black;
+}
+
+
+.main{
+    background-image: url(assets/images/main_bg.jpeg);
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+    height: 90vh;
+    position: relative;
+}
+
+.main .box{
+    height: 90vh;
+    width: 100%;
+    opacity: 0.45;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+nav{
+    max-width: 82vw;
+    /* width: 62vw; */
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+    
+    
+}
+
+
+
+/*  z-index property specifies the stack order of an element (which element should be placed in front of, or behind, the others).
+An element can have a positive or negative stack order: */
+
+
+
+nav img{
+    width: 155px;
+    position: relative;
+    z-index: 10;
+    margin-top: 30px;    
+}
+
+nav button{
+    position: relative;
+    z-index: 10;
+    margin-top: 30px;
+    margin-right: 10px;
+}
+/* flex direction column  */
+.hero{
+    font-family: 'Martel Sans', sans-serif;
+    height: calc(100% - 62px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 23px;
+    padding: 0 30px;
+
+}
+
+.hero> :nth-child(1){
+    font-weight: bolder;
+    font-size: 50px;
+    text-align: center;
+}
+
+.hero> :nth-child(2){
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+.hero> :nth-child(3){
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+.saperation_line{
+    height: 7px;
+    background-color: rgb(46, 45, 45);
+}
+
+.btn{
+    padding: 3px 8px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.37);
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 7px 15px;
+}
+
+.btn-red-btn{
+    background-color: red;
+    color: white;
+    padding: 13px 24px;
+    border: none;
+    border-radius: 4px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.btn-red-sm{
+    background-color: red;
+    color: white;
+}
+
+
+.hero-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+
+.main input{
+    background-color: rgba(23, 23, 23, 0.7);
+    color: white;
+    opacity: 0.9;
+    /* padding: 18px 74px; */
+    padding: 16px 117px 15px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: bold;
+    
+}
+
+
+.first{
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.head-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.sec-image{
+    position: relative;
+}
+
+.sec-image img{
+   width: 35vw;
+    position: relative;
+    z-index: 10;
+}
+
+.sec-image video{
+   
+    position: absolute;
+    top: 51px;
+    right: 0;
+  width: 30vw;
+    
+}
+
+.first > div{
+    display: flex;
+    
+}
+
+.first > div :first-child{
+    font-size: 45px;
+    font-weight: bolder;
+}
+
+.first > div :nth-child(2){
+    font-size: 22px;
+    margin-top: 12px;
+    
+    
+
+}
+
+
+.third video{
+    position: absolute;
+    top: 45px;
+    right: 120px;
+    width: 21vw;
+}
+
+.faq{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    
+}
+
+
+
+.faq h2{
+    font-size: 49px;
+    font-weight: bolder;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.faqbox{
+    transition: all 1s ease-out;
+    width: 157vh;
+    color: white;
+    display: flex;
+    background-color: rgb(45,45,45);
+    padding: 34px;
+    justify-content: space-between;
+    margin-top: 10px;
+    height: 17px;
+    cursor: pointer;
+
+    font-size: 22px;
+    font-weight: 500;
+    text-align: left;
+    
+  
+}
+
+
+.faqbox:hover{
+    background-color: rgb(66, 66, 66);
+}
+
+
+.member{
+    margin-top: 65px;
+    margin-bottom: 70px;
+}
+
+.member span{
+    font-size: 18px;
+}
+
+.member-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+
+.member-btn input{
+    background-color: rgba(23, 23, 23, 0.7);
+    color: white;
+    opacity: 0.9;
+    /* padding: 18px 74px; */
+    padding: 16px 117px 15px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+footer{
+    color: white;
+    margin-top: 60px;
+    margin-bottom: 70px;
+    
+}
+
+.data{
+    display: flex;
+    width: 140vh;
+    justify-content: space-between;
+    margin-left: 25vh;
+}
+
+.col{
+    list-style-type: none;
+}
+
+footer >.data >.col >li{
+    margin-top: 18px;
+    color: rgba(255,255,255,0.7);
+}
+
+
+footer >.data >.col >li >a{
+    color: rgba(255,255,255,0.7);
+    font-size: 14px;
+}
+
+
+
